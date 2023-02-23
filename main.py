@@ -25,6 +25,6 @@ for item in url:
     print(f"\nTitre:{youtube_video.title}")
     # youtube_video.streams pour voir les différents itag video et audio
     print("téléchargement en cours...")
-    stream = youtube_video.streams.get_by_itag(22)  # itag 140: audio-only 128kbps/ 18:360p/ 22: 720p/ 137:1080p
+    stream = youtube_video.streams.get_by_itag(140)  # itag 140: audio-only 128kbps/ 18:360p/ 22: 720p/ 137:1080p
     stream.download()
     print("téléchargement fini !")
